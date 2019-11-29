@@ -24,6 +24,7 @@ app.get('/read', (req, res) => {
     })
 })
 
+
 app.get('/write', (req, res) => {
     writeOp((error, count) => {
         if (error) {
@@ -41,6 +42,7 @@ app.get('/mysqlR/:id', (req, res) => {
         if (error) {
             return res.status(400).send(error)
         }
+        console.log("sending row :", row)
         res.json(row)
     })
 })
