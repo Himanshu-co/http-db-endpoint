@@ -1,4 +1,4 @@
-const mysql = require('mysql')
+// const mysql = require('mysql')
 
 const mysqlW = (connection, row, callback) => {
     const queryString = 'INSERT INTO new_table (name,email) VALUES (?, ?)'
